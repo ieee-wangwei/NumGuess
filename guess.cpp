@@ -11,7 +11,7 @@ int main(){
 	int input[3],j=0,k=0,A=0,B=0;
 	cout<<"你需要玩游戏吗？(y/n)"<<endl;
 	cin>>judge;
-	srand(time(NULL));3
+	srand(time(NULL));
 	while (judge=='y'){
 		// get the random numbers
 		play+=1;
