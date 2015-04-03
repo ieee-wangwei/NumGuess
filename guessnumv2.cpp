@@ -2,22 +2,23 @@
 #include<cstdlib>
 #include<iostream>
 #include <cctype>
+#include <string>
 
 using namespace std;
 
 int main(){
 	// define the number,bool
-	char judge;
+	string judge;
 	int RandNum[3]={-1,-2,-3},i=0,m=0,wintime=0,play=0;
 	int input[3]={0},j=0,k=0,A=0,B=0;
 	cout<<"你需要玩游戏吗？(y/n)"<<endl;
 	cin>>judge;
-	while (judge!='Y'&&judge!='y'&&judge!='N'&&judge!='n'){                    //加入输入检查
+	while (judge!="Y"&&judge!="y"&&judge!="N"&&judge!="n"){                    //加入输入检查
 		cout<<"Please enter Y/N"<<endl;
 		cin>>judge;
 	}
 	srand(time(NULL));
-	while (judge=='y'||judge=='Y'){
+	while (judge=="y"||judge=="Y"){
 		// get the random numbers
 		play+=1;
 		i=0;
@@ -60,12 +61,12 @@ int main(){
 			k+=1;
 			}
 		}
-		if(k==7){ cout<<"你输了"<<endl;
+		if(k==7){ cout<<"很遗憾,你输了"<<endl;
 		cout<<"答案是"<<RandNum[0]<<RandNum[1]<<RandNum[2];
 		}
 		cout<<"你想还玩游戏吗？"<<endl;
 		cin>>judge;
-		while (judge!='Y'&&judge!='y'&&judge!='N'&&judge!='n'){
+		while (judge!="Y"&&judge!="y"&&judge!="N"&&judge!="n"){
 			cout<<"Please enter Y/N"<<endl;
 			cin>>judge;
 		}
